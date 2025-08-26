@@ -1,0 +1,546 @@
+
+    :root {
+      --laravel-dark: #343a40;
+      --laravel-red: #F61500;
+      --laravel-light: #f8f9fa;
+      --body-bg: var(--laravel-dark);
+      --body-color: var(--laravel-light);
+      --card-bg: rgba(52, 58, 64, 0.8);
+      --navbar-bg: rgba(33, 37, 41, 0.95);
+      --border-color: rgba(255, 255, 255, 0.1);
+    }
+    
+    body {
+      font-family: 'Nunito', sans-serif;
+      background-color: var(--body-bg);
+      color: var(--body-color);
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+    
+    /* Light theme styles */
+    body.light-theme {
+      --body-bg: #f8f9fa;
+      --body-color: #343a40;
+      --card-bg: rgba(255, 255, 255, 0.9);
+      --navbar-bg: rgba(248, 249, 250, 0.95);
+      --border-color: rgba(0, 0, 0, 0.1);
+    }
+    
+    body.light-theme .navbar {
+      background-color: var(--navbar-bg);
+    }
+    
+    body.light-theme .navbar-dark .navbar-nav .nav-link {
+      color: var(--body-color);
+    }
+    
+    body.light-theme .feature-card,
+    body.light-theme .product-card,
+    body.light-theme .modal-content {
+      background-color: var(--card-bg);
+      color: var(--body-color);
+      border-color: var(--border-color);
+    }
+    
+    body.light-theme footer {
+      background-color: var(--navbar-bg);
+      color: var(--body-color);
+    }
+    
+    body.light-theme .footer-links a {
+      color: var(--body-color);
+    }
+    
+    /* Theme toggle button */
+    #themeToggle {
+      background: transparent;
+      border: 1px solid var(--laravel-red);
+      color: var(--body-color);
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+    
+    #themeToggle:hover {
+      background-color: var(--laravel-red);
+      color: white;
+    }
+    
+    .navbar {
+      background-color: rgba(33, 37, 41, 0.95);
+      padding: 1rem 0;
+    }
+    
+    .navbar-brand {
+      font-weight: 700;
+      font-size: 1.5rem;
+    }
+    
+    .navbar-brand img {
+      height: 40px;
+      margin-right: 10px;
+    }
+    
+    .btn-laravel {
+      background-color: var(--laravel-red);
+      border-color: var(--laravel-red);
+      color: white;
+      transition: all 0.3s ease;
+    }
+    
+    .btn-laravel:hover {
+      background-color: #F61500;
+      border-color: #F61500;
+      color: white;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 8px rgba(227, 52, 47, 0.3);
+    }
+    
+    .hero-section {
+      background: linear-gradient(rgba(33, 37, 41, 0.9), rgba(33, 37, 41, 0.9)), url('../img/gestion.png');
+      background-size: cover;
+      background-position: center;
+      min-height: 90vh;
+      display: flex;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+      .hero-section2 {
+      background-color: hsl(0, 0%, 15%);
+      background-size: cover;
+      background-position: center;
+      min-height: 90vh;
+      display: flex;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .hero-text h1 {
+      font-size: 3.5rem;
+      font-weight: 800;
+      margin-bottom: 1.5rem;
+    }
+    
+    .hero-text p {
+      font-size: 1.25rem;
+      margin-bottom: 2rem;
+      opacity: 0.9;
+    }
+    
+    .feature-card {
+      background-color: rgba(52, 58, 64, 0.8);
+      border-radius: 10px;
+      padding: 2rem;
+      margin: 1rem 0;
+      transition: all 0.3s ease;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      height: 100%;
+    }
+    
+    .feature-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+      border-color: var(--laravel-red);
+    }
+    
+    .feature-icon {
+      background-color: var(--laravel-red);
+      color: white;
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.8rem;
+      margin-bottom: 1.5rem;
+    }
+    
+    .features-section {
+      padding: 5rem 0;
+    }
+    
+    .section-title {
+      position: relative;
+      margin-bottom: 3rem;
+      padding-bottom: 1rem;
+    }
+    
+    .section-title::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 80px;
+      height: 4px;
+      background-color: var(--laravel-red);
+    }
+
+    .section-bg{
+      background-color: hsl(0, 0%, 15%);
+    }
+    
+    .product-card {
+      background-color: rgba(52, 58, 64, 0.8);
+      border-radius: 10px;
+      overflow: hidden;
+      transition: all 0.3s ease;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      height: 100%;
+    }
+    
+    .product-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    }
+    
+    .product-img {
+      height: 200px;
+      object-fit: cover;
+      width: 100%;
+    }
+    
+    .product-info {
+      padding: 1.5rem;
+    }
+    
+    .product-price {
+      color: var(--laravel-red);
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+    
+    .modal-content {
+      background-color: var(--laravel-dark);
+      color: var(--laravel-light);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+    
+    .modal-header, .modal-footer {
+      border-color: rgba(255, 255, 255, 0.1);
+    }
+    
+    .modal-title {
+      color: var(--laravel-red);
+    }
+    
+    footer {
+      background-color: rgba(33, 37, 41, 0.95);
+      padding: 3rem 0;
+      margin-top: 3rem;
+    }
+    
+    .footer-links h5 {
+      color: var(--laravel-red);
+      margin-bottom: 1.5rem;
+      font-weight: 600;
+    }
+    
+    .footer-links a {
+      color: var(--laravel-light);
+      text-decoration: none;
+      display: block;
+      margin-bottom: 0.8rem;
+      transition: all 0.3s ease;
+    }
+    
+    .footer-links a:hover {
+      color: var(--laravel-red);
+      transform: translateX(5px);
+    }
+    
+    .social-icons a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background-color: rgba(255, 255, 255, 0.1);
+      color: var(--laravel-light);
+      margin-right: 10px;
+      transition: all 0.3s ease;
+    }
+    
+    .social-icons a:hover {
+      background-color: var(--laravel-red);
+      transform: translateY(-3px);
+    }
+    
+    .copyright {
+      margin-top: 2rem;
+      padding-top: 2rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    
+    .loading-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(33, 37, 41, 0.9);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 9999;
+    }
+    
+    .spinner {
+      width: 50px;
+      height: 50px;
+      border: 5px solid rgba(255, 255, 255, 0.3);
+      border-radius: 50%;
+      border-top-color: var(--laravel-red);
+      animation: spin 1s ease-in-out infinite;
+    }
+    
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+    
+    .carousel-item {
+      height: 300px;
+    }
+    
+    .carousel-caption {
+      background-color: rgba(33, 37, 41, 0.7);
+      border-radius: 10px;
+      padding: 20px;
+    }
+    
+    .back-to-top {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background-color: var(--laravel-red);
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2rem;
+      opacity: 0;
+      transition: all 0.3s ease;
+      z-index: 99;
+    }
+    
+    .back-to-top.visible {
+      opacity: 1;
+      cursor: pointer;
+    }
+    
+    .back-to-top:hover {
+      transform: translateY(-5px);
+    }
+    
+    .error-message {
+      background-color: rgba(220, 53, 69, 0.2);
+      color: #F61500;
+      border: 1px solid #F61500;
+      border-radius: 5px;
+      padding: 10px 15px;
+      margin-bottom: 1rem;
+      display: none;
+    }
+
+    .imgDashboard {
+      border-radius: 10px;
+    }
+
+    /* Sobrescribe tarjetas de Bootstrap si tienen bg-dark */
+body.light-theme .card.bg-dark,
+body.light-theme .bg-dark {
+  background-color: var(--card-bg) !important;
+  color: var(--body-color) !important;
+  border-color: var(--border-color) !important;
+}
+
+body.light-theme .text-white {
+  color: var(--body-color) !important;
+}
+
+/* Hero Section background claro */
+body.light-theme .hero-section {
+  background: linear-gradient(rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), url('../img/gestion.png');
+  background-size: cover;
+  background-position: center;
+  color: var(--body-color);
+}
+
+/* Carousel claro */
+body.light-theme .carousel-caption {
+  background-color: rgba(255, 255, 255, 0.9);
+  color: var(--body-color);
+}
+
+body.light-theme .carousel-caption h3,
+body.light-theme .carousel-caption p {
+  color: var(--body-color);
+}
+
+/* Modal claro */
+body.light-theme .modal-content {
+  background-color: var(--card-bg);
+  color: var(--body-color);
+  border: 1px solid var(--border-color);
+}
+
+body.light-theme .modal-header,
+body.light-theme .modal-footer {
+  border-color: var(--border-color);
+}
+
+/* Botón activo */
+body.light-theme .btn-laravel {
+  color: white;
+  background-color: var(--laravel-red);
+  border-color: var(--laravel-red);
+}
+
+body.light-theme #card-logo {
+filter: brightness(0) saturate(100%) invert(20%) sepia(10%) saturate(250%) hue-rotate(180deg) brightness(90%) contrast(85%);
+}
+
+#card-logo {
+  width: 70px;
+  height: 70px;
+  fill: currentColor;
+}
+
+body.light-theme #card-logo  {
+  color: #343a40;
+}
+
+body:not(.light-theme) #card-logo  {
+  color: white;
+}
+.contenedorInfo{
+  width: 100%;
+  display: flex;
+  justify-content: center;   /* Centrado horizontal */
+  align-items: center;       /* Centrado vertical */
+  text-align: center;        /* Centrar el texto dentro del párrafo */
+  height: 100vh;             /* Altura de pantalla completa (ajusta si es necesario) */
+  padding: 0 2rem;   
+  background: linear-gradient(rgba(33, 37, 41, 0.9), rgba(33, 37, 41, 0.9)), url('../img/fondo3.jpg');
+
+}
+
+
+.heroImg{
+  display:flex;
+  justify-content: center;
+  width: 60%;
+  height: auto;
+  border-radius: 40px;
+
+}
+
+#logo3d{
+    width: 100%;
+    height: 400px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*---------------------------------------------------------------------*/
+
+     /* Botón flotante */
+    #boton-flotante {
+      position: fixed;
+      bottom: 40px;
+      right: 0;
+      background-color: #d62828;
+      color: white;
+      padding: 10px 15px;
+      border-top-left-radius: 8px;
+      border-bottom-left-radius: 8px;
+      cursor: pointer;
+      font-weight: bold;
+      z-index: 9999;
+      transition: background-color 0.3s;
+    }
+
+    #boton-flotante:hover {
+      background-color: #d0b0b0;
+      color:#343a40
+    }
+
+    /* Ventana deslizante */
+    #ventana-deslizante {
+      position: fixed;
+      bottom: 40px;
+      right: -250px; /* Oculta inicialmente */
+      width: 250px;
+      background-color: #d0b0b0;
+      border: none;
+      box-shadow: -2px 2px 10px rgba(0, 0, 0, 0.2);
+      padding: 10px;
+      transition: right 0.3s ease;
+      z-index: 9998;
+      color:#343a40;
+      border-radius: 5px;
+    }
+
+    /* Cuando está activa */
+    #ventana-deslizante.activa {
+      right: 50px; /* Se desliza hacia dentro */
+    }
+
+    #ventana-deslizante h4 {
+      margin: 0 0 10px 0;
+      font-size: 16px;
+    }
+
+ .circle-img {
+    width: 100%;
+    max-width: 400px;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+
+
+
+    .whatsapp-btn {
+      background-color: #25D366;
+      color: white;
+      font-weight: bold;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 30px;
+      display: inline-flex;
+      align-items: center;
+    }
+    .whatsapp-btn img {
+      width: 24px;
+      margin-right: 10px;
+    }
+
+    .team-img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 1px solid white;
+  }
+
+  /* Ajusta el tamaño de la imagen del equipo en pantallas pequeñas */
+    @media (max-width: 767px) {
+    .circle-img {
+      margin-bottom: 20px;
+    }
+  }

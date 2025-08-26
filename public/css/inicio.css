@@ -1,0 +1,345 @@
+:root {
+            --laravel-red: #FF2D20;
+            --dark-bg: #212529;
+            --darker-bg: #1a1d20;
+            --light-text: #e2e8f0;
+        }
+        
+        body {
+            font-family: 'Nunito', sans-serif;
+            background-color: #f8fafc;
+            color: #333;
+        }
+        
+        .navbar-laravel {
+            background-color: var(--dark-bg);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        
+        .navbar-brand img {
+            height: 30px;
+        }
+        
+        .nav-link {
+            color: var(--light-text) !important;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+        
+        .nav-link:hover {
+            color: var(--laravel-red) !important;
+        }
+        
+        .btn-laravel {
+            background-color: var(--laravel-red);
+            color: white;
+            border: none;
+            font-weight: 600;
+            padding: 0.6rem 1.5rem;
+            border-radius: 0.25rem;
+            transition: all 0.3s;
+        }
+        
+        .btn-laravel:hover {
+            background-color: #e01e0c;
+            color: white;
+        }
+        
+        .btn-outline-laravel {
+            color: var(--laravel-red);
+            border: 2px solid var(--laravel-red);
+            background-color: transparent;
+            font-weight: 600;
+            padding: 0.6rem 1.5rem;
+            border-radius: 0.25rem;
+            transition: all 0.3s;
+        }
+        
+        .btn-outline-laravel:hover {
+            background-color: var(--laravel-red);
+            color: white;
+        }
+        
+        .hero {
+            background-color: var(--dark-bg);
+            color: var(--light-text);
+            padding: 6rem 0;
+            position: relative;
+            overflow: hidden;
+            height: 100vh;
+        }
+
+        .hero-section {
+        background: linear-gradient(rgba(33, 37, 41, 0.9), rgba(33, 37, 41, 0.9)), url('../img/gestion.png');
+        background-size: cover;
+        background-position: center;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        position: relative;
+        overflow: hidden;
+        color: white;
+        }
+            
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -100px;
+            right: -100px;
+            width: 300px;
+            height: 300px;
+            background: radial-gradient(var(--laravel-red), transparent 70%);
+            opacity: 0.2;
+            border-radius: 50%;
+        }
+        
+        .feature-card {
+            border: none;
+            border-radius: 8px;
+            overflow: hidden;
+            transition: all 0.3s;
+            background-color: white;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            height: 100%;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        .feature-card .icon {
+            font-size: 2.5rem;
+            color: var(--laravel-red);
+            margin-bottom: 1rem;
+        }
+        
+        .feature-card .card-title {
+            font-weight: 700;
+        }
+        
+        .screenshot-container {
+            position: relative;
+            padding: 20px;
+            background-color: var(--darker-bg);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        
+        .screenshot-desktop {
+            border-radius: 4px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            width: 100%;
+        }
+        
+        .screenshot-mobile {
+            width: 150px;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            z-index: 10;
+            border-radius: 10px;
+            box-shadow: -5px 5px 15px rgba(0, 0, 0, 0.3);
+        }
+        
+        .testimonial {
+            background-color: var(--dark-bg);
+            color: var(--light-text);
+            padding: 2rem;
+            border-radius: 8px;
+            position: relative;
+        }
+        
+        .testimonial::before {
+            content: '"';
+            font-size: 5rem;
+            position: absolute;
+            top: -20px;
+            left: 10px;
+            color: var(--laravel-red);
+            opacity: 0.2;
+            font-family: serif;
+        }
+        
+        .testimonial .company {
+            color: var(--laravel-red);
+            font-weight: 700;
+        }
+        
+        .pricing-card {
+            border: none;
+            border-radius: 8px;
+            transition: all 0.3s;
+            overflow: hidden;
+        }
+        
+        .pricing-header {
+            background-color: var(--dark-bg);
+            color: white;
+            padding: 1.5rem;
+        }
+        
+        .popular-plan {
+            position: relative;
+            border: 2px solid var(--laravel-red);
+            transform: scale(1.05);
+            z-index: 10;
+        }
+        
+        .popular-plan .pricing-header {
+            background-color: var(--laravel-red);
+        }
+        
+        .price {
+            font-size: 2.5rem;
+            font-weight: 700;
+        }
+        
+        .footer {
+            background-color: var(--dark-bg);
+            color: var(--light-text);
+        }
+        
+        .footer a {
+            color: var(--light-text);
+            text-decoration: none;
+            transition: all 0.3s;
+        }
+        
+        .footer a:hover {
+            color: var(--laravel-red);
+        }
+        
+        .footer-title {
+            color: white;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+        }
+        
+        .social-icon {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            background-color: rgba(255, 255, 255, 0.1);
+            color: white;
+            margin-right: 10px;
+            transition: all 0.3s;
+        }
+        
+        .social-icon:hover {
+            background-color: var(--laravel-red);
+            color: white;
+            transform: translateY(-3px);
+        }
+        
+        .section-title {
+            position: relative;
+            margin-bottom: 2.5rem;
+            font-weight: 700;
+        }
+        
+        .section-title::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -10px;
+            width: 50px;
+            height: 3px;
+            background-color: var(--laravel-red);
+        }
+        
+        .stats-container {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+        
+        .stats-number {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--laravel-red);
+        }
+        
+        .demo-btn {
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .demo-btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(
+                90deg,
+                transparent,
+                rgba(255, 255, 255, 0.2),
+                transparent
+            );
+            transition: 0.5s;
+        }
+        
+        .demo-btn:hover::before {
+            left: 100%;
+        }
+        
+        .how-it-works .step {
+            position: relative;
+            padding-left: 50px;
+            margin-bottom: 2rem;
+        }
+        
+        .how-it-works .step-number {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 36px;
+            height: 36px;
+            background-color: var(--laravel-red);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+        }
+
+            #logo3d{
+            width: 100%;
+            height: 400px;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+                
+        @media (max-width: 767px) {
+            .hero {
+                padding: 4rem 0;
+                text-align: center;
+            }
+            
+            .section-title::after {
+                left: 50%;
+                transform: translateX(-50%);
+            }
+            
+            .screenshot-mobile {
+                width: 100px;
+                right: 10px;
+                bottom: 10px;
+            }
+            
+            .popular-plan {
+                transform: none;
+                margin: 1rem 0;
+            }
+        }

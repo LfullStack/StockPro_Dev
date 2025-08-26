@@ -1,0 +1,32 @@
+services:
+  - type: web
+    name: automatic-control
+    runtime: docker
+    repo: https://github.com/Gilson-Zuniga/automatic_control
+    plan: free
+    branch: main
+    dockerContext: .
+    dockerfilePath: Dockerfile
+    envVars:
+      - key: APP_ENV
+        value: production
+      - key: APP_DEBUG
+        value: false
+      - key: APP_URL
+        value: https://automatic-control.onrender.com
+      - key: DB_CONNECTION
+        value: pgsql
+      - key: DB_HOST
+        value: dpg.render-hosted.com
+      - key: DB_PORT
+        value: 5432
+      - key: DB_DATABASE
+        value: automaticdb
+      - key: DB_USERNAME
+        value: automaticuser
+      - key: DB_PASSWORD
+        value: tu_password_aqui
+
+databases:
+  - name: automaticdb
+    plan: free
