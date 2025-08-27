@@ -648,7 +648,7 @@
                         <img src="{{asset('img/levi.jpg')}}" alt="Developer 2" class="rounded-circle img-fluid mb-3" style="width: 150px; height: 150px; object-fit: cover;">
                         <h3 class="h4 fw-bold">Levi J. Quintero S.</h3>
                         <p class="text-ligth mb-3">Tecnólogo en Análisis y Desarrollo de Software</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
+                        <p>.</p>
                     </div>
                 </div>
             </div>
