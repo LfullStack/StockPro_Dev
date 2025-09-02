@@ -640,7 +640,7 @@
                         <img src="{{asset('img/gilson.jpg')}}" alt="Developer 1" class="rounded-circle img-fluid mb-3" style="width: 150px; height: 150px; object-fit: cover;">
                         <h3 class="h4 fw-bold">Gilson Zuñiga M.</h3>
                         <p class="text-ligth mb-3">Tecnólogo en Análisis y Desarrollo de Software</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
+                        <p>Tuvo a su cargo la estructuración y gestión de la base de datos, asegurando un modelo sólido y eficiente para el almacenamiento y consulta de la información. En el backend trabajó en la creación de controladores y definición de rutas, implementando la lógica necesaria para conectar la capa de datos con la aplicación. Su trabajo garantizó la correcta comunicación entre el sistema y la base de datos, así como la consistencia e integridad de la información..</p>
                     </div>
                 </div>
                 <div class="col-md-6">
@@ -648,7 +648,7 @@
                         <img src="{{asset('img/levi.jpg')}}" alt="Developer 2" class="rounded-circle img-fluid mb-3" style="width: 150px; height: 150px; object-fit: cover;">
                         <h3 class="h4 fw-bold">Levi J. Quintero S.</h3>
                         <p class="text-ligth mb-3">Tecnólogo en Análisis y Desarrollo de Software</p>
-                        <p>.</p>
+                        <p>Se encargó de la implementación y despliegue del proyecto en un entorno de nube, asegurando la correcta configuración de la infraestructura y la disponibilidad de la aplicación. En la parte de backend trabajó en la gestión de usuarios, definición de rutas y control de accesos, garantizando un flujo seguro y eficiente de la información. También participó en el desarrollo del frontend, integrando las vistas con la lógica del sistema y optimizando la experiencia de usuario. Su aporte permitió que el proyecto funcionara de manera estable y escalable en producción..</p>
                     </div>
                 </div>
             </div>
@@ -691,7 +691,7 @@
                         </a>
                     </div>
                     <div class="social-icon">
-                        <a href="tel:+3243046676">
+                        <a href="tel:+573243046676">
                             <i class="fas fa-phone"></i>
                         </a>
                     </div>
