@@ -5,7 +5,7 @@
 
     <!-- Favicon -->
     <link rel="icon" href="/img/logo.ico" sizes="any">
-    <link rel="icon" href="/img/logo-icon.svg" type="image/svg+xml">
+    <link rel="icon" href="/img/logo.png" type="image/svg+xml">
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
     <link rel="stylesheet" href="/build/assets/app-XXXXX.css">
