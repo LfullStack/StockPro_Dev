@@ -65,7 +65,7 @@
             <x-button-link href="{{ route('admin.facturas_proveedores.index') }}" >
                     Cancelar
                 </x-button-link>
-            <x-button type="submit">Guardar Factura</x-button>
+            <x-button type="submit" >Guardar Factura</x-button>
             <div class="flex justify-end gap-2">
                 
         </div>

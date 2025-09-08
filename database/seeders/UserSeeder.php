@@ -25,6 +25,14 @@ class UserSeeder extends Seeder
             'password' => Hash::make('admin123'),
         ])->assignRole('admin');
 
+        User::create([
+            'name' => 'Jesus Abril',
+            'email' => 'jesusabril@example.com',
+            'password' => Hash::make('admin123'),
+        ])->assignRole('admin');
+
+        
+
          
 
         // Usuarios auxiliares (9)
@@ -38,6 +46,7 @@ class UserSeeder extends Seeder
             ['name' => 'Mateo Gómez',     'email' => 'mateo.gomez@example.com'],
             ['name' => 'Sandra López',    'email' => 'sandra.lopez@example.com'],
             ['name' => 'Esteban Cruz',    'email' => 'esteban.cruz@example.com'],
+
         ];
 
         foreach ($auxiliares as $aux) {

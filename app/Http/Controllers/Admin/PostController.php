@@ -112,7 +112,7 @@ class PostController extends Controller
 
         session()->flash('swal', [
             'icon' => 'success',
-            'title' => '¡ Bien crack !',
+            'title' => '¡Post Actualizado!',
             'string' => 'Se ha editado el post con éxito'
         ]);
 
@@ -137,7 +137,7 @@ class PostController extends Controller
 
         session()->flash('swal', [
             'icon' => 'success',
-            'title' => '¡ Bien crack !',
+            'title' => '¡ Eliminado!',
             'text' => 'Se ha eliminado el post con éxito.'
         ]);
 

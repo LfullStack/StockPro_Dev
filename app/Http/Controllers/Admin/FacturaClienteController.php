@@ -51,6 +51,13 @@ class FacturaClienteController extends Controller
                     'nombre' => $p->nombre,
                 ],
             ];
+
+        // condicional para mostrar modal de producto registrado exitosamente
+
+
+
+
+        
         });
 
         return view('admin.facturas_clientes.create', [
@@ -60,6 +67,9 @@ class FacturaClienteController extends Controller
             'clientes' => $clientes,
             
         ]);
+
+        
+
     }
 
     public function store(Request $request)

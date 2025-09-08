@@ -30,6 +30,8 @@ class FacturaProveedorController extends Controller
         $empresas = Empresa::all();
         $productos = Producto::with('unidadMedida')->get();
         return view('admin.facturas_proveedores.create', compact('proveedores', 'empresas', 'productos'));
+
+        
     }
 
     public function store(Request $request)
@@ -105,8 +107,6 @@ class FacturaProveedorController extends Controller
             ]);
         });
 
-        
-
         session()->flash('swal', [
                 'icon' => 'success',
                 'title' => '¡ Muy bien !',
@@ -141,7 +141,7 @@ class FacturaProveedorController extends Controller
 
         session()->flash('swal', [
             'icon' => 'success',
-            'title' => '¡ Bien crack !',
+            'title' => '¡Eiminado!',
             'text' => 'Se ha eliminado la factura con éxito'
         ]);
 

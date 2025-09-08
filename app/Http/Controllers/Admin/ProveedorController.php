@@ -51,7 +51,7 @@ class ProveedorController extends Controller
 
         session()->flash('swal', [
             'icon' => 'success',
-            'title' => '¡ Bien crack !',
+            'title' => '¡Registrado!',
             'text' => 'Se ha registado un nuevo proveedor con éxito'
         ]);
         
