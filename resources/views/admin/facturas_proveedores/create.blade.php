@@ -1,4 +1,4 @@
-<x-layouts.app :title="'Registrar Factura Proveedor |StockPro'">
+<x-layouts.app :title="'Registrar Factura Proveedor | StockPro'">
     <flux:breadcrumbs class="mb-6">
         <flux:breadcrumbs.item :href="route('dashboard')">Dashboard</flux:breadcrumbs.item>
         <flux:breadcrumbs.item :href="route('admin.facturas_proveedores.index')">Facturas Proveedor</flux:breadcrumbs.item>

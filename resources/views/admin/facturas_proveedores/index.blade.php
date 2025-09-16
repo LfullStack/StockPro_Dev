@@ -1,4 +1,4 @@
-<x-layouts.app :title="'Ver Facturas Proveedores | StockPro'"> 
+<x-layouts.app :title="'Facturas Proveedores | StockPro'"> 
 
     <div class="mb-8 flex justify-between items-center">
         <flux:breadcrumbs>

@@ -153,11 +153,11 @@
         <flux:sidebar sticky stashable class="border-e border-zinc-200 bg-zinc-50 dark:border-zinc-700 dark:bg-zinc-900">
             <flux:sidebar.toggle class="lg:hidden" icon="x-mark" />
 
-            <a href="" class="me-5 flex items-center space-x-2 rtl:space-x-reverse" wire:navigate>
+            <div class="me-5 flex items-center space-x-2 rtl:space-x-reverse" wire:navigate>
                 <img src="{{ asset('img/logo.png') }}" alt="Logo" class="h-10 w-auto" />
                 <h1 class="mb-0.5 truncate leading-tight font-semibold">StockPro</h1>
 
-            </a>
+            </div>
             
             <flux:navlist variant="outline">
                 @foreach ($groups as $group => $items)
