@@ -1,4 +1,4 @@
-<x-layouts.app :title="'Ver Categorías || StockPro'"> 
+<x-layouts.app :title="'Categorías | StockPro'"> 
 
     <div class="mb-8 flex justify-between items-center">
         <flux:breadcrumbs>
