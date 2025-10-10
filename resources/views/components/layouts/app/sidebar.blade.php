@@ -8,6 +8,13 @@
                 'url' => route('dashboard'),
                 'current' => request()->routeIs('dashboard'),
             ],
+
+            [
+                'name' => 'Venta Rápida',
+                'icon' => 'shopping-cart',
+                'url' => route('admin.venta_rapida.index'),
+                'current' => request()->routeIs('venta_rapida.*'),
+            ],
             
             [
                 'name' => 'Posts',

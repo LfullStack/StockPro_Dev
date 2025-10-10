@@ -1,0 +1,2 @@
+user: stockuser
+password: StockProDev*2025*

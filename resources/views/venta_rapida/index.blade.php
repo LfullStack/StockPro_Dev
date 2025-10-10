@@ -1,26 +1,25 @@
-<x-layouts.app :title="'Facturas Proveedores | StockPro'"> 
+<x-layouts.app :title="'Ver Facturas Clientes | StockPro'"> 
 
     <div class="mb-8 flex justify-between items-center">
         <flux:breadcrumbs>
 
             <flux:breadcrumbs.item href="{{route('dashboard')}}">Dashboard</flux:breadcrumbs.item>
-            <flux:breadcrumbs.item >Facturas Proveedores</flux:breadcrumbs.item>
+            <flux:breadcrumbs.item >Facturas Clientes</flux:breadcrumbs.item>
         </flux:breadcrumbs>
-        <x-button-crear href="{{ route('admin.facturas_proveedores.create') }}" >Nuevo</x-button-crear>
+        <x-button-crear href="{{ route('admin.facturas_clientes.create') }}" >Nuevo</x-button-crear>
     </div>
     
-    <div class="card mt-8 overflow-x-auto w-full min-w-full table-auto">
-        <table id="tabla-facturas_proveedores" class="display table datatable">
+    <div class="card mt-8 overflow-x-auto w-full">
+        <table id="tabla-facturas_clientes" class="display table datatable min-w-full table-auto">
             <thead>
                 <tr>
-                    <th>id</th>
-                    <th>ID Factura</th>
-                    <th>Proveedor</th>
-                    <th>Tienda</th>
-                    <th>Fecha Pago</th>
-                    <th>Total</th>
-                    <th>Factura PDF</th>
-
+                <th>ID</th>
+                <th>ID Factura</th>
+                <th>Cliente</th>
+                <th>Vendedor</th>
+                <th>Fecha</th>
+                <th>Total</th>
+                <th>PDF</th>
                 </tr>
             </thead>
             <tbody>
@@ -28,9 +27,9 @@
                     <tr>
                         <td>{{ $factura->id }}</td>
                         <td>{{ $factura->numero_factura }}</td>
-                        <td>{{ $factura->proveedor->nombre ?? 'N/A' }}</td>
+                        <td>{{ $factura->cliente->name ?? 'N/A'  }}</td>
                         <td>{{ $factura->empresa->nombre ?? 'N/A' }}</td>
-                        <td>{{ $factura->fecha_pago }}</td>
+                        <td>{{ $factura->created_at }}</td>
                         <td>${{ number_format($factura->total, 2, ',', '.') }}</td>
                         <td>
                             @if($factura->pdf_path)
@@ -41,8 +40,6 @@
                                 <span class="text-gray-500 text-xs">Sin archivo</span>
                             @endif
                         </td>
-
-
 
                     </tr>
                 @endforeach

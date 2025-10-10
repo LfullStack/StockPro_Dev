@@ -5,7 +5,8 @@ namespace App\Http\Controllers;
 use App\Models\FacturaCliente;
 use Illuminate\Support\Facades\Auth;
 
-class FacturaClienteController extends Controller
+
+class VentaRapidaController extends Controller
 {
     public function index()
     {
@@ -15,7 +16,7 @@ class FacturaClienteController extends Controller
             ->with(['productos'])
             ->get();
 
-        return view('admin.venta_rapida.index', compact('facturas'));
+        return view('venta_rapida.index', compact('facturas'));
     }
 
     public function exportar()

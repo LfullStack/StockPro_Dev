@@ -88,8 +88,8 @@
 
 
         <div class="mt-8 flex gap-4">
-            <x-button-link href="{{ route('admin.categorias.index') }}">Cancelar</x-button-link>
-            <x-button type="submit" >Guardar Factura</x-button>
+            <x-button-link href="{{ route('admin.facturas_clientes.index') }}">Cancelar</x-button-link>
+            <x-button href="{{route('admin.registro_usuario.index')}}" type="submit" >Guardar Factura</x-button>
 
         </div>
     </form>
