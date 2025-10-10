@@ -13,6 +13,7 @@ use App\Http\Controllers\Admin\PostController;
 use App\Http\Controllers\Admin\ReporteFacturaClienteController;
 use App\Http\Controllers\Admin\ReporteFacturaProveedorController;
 use App\Http\Controllers\Admin\MetaVentaController;
+use App\Http\Controllers\VentaRapidaController;
 use App\Livewire\Admin\EventosIndex;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Route;
@@ -33,6 +34,8 @@ Route::resource('unidades_medidas',UnidadMedidaController::class)->parameters(['
 Route::resource('facturas_clientes',FacturaClienteController::class);
 Route::resource('posts',PostController::class);
 
+
+
 Route::get('reportes/facturas_clientes', [ReporteFacturaClienteController::class, 'index'])->name('reportes.facturas_clientes.index');
 
 Route::get('reportes/facturas_clientes/exportar', [ReporteFacturaClienteController::class, 'exportarExcel'])
@@ -46,5 +49,8 @@ Route::get('reportes/facturas_proveedores/exportar', [ReporteFacturaProveedorCon
 Route::resource('metas_ventas', MetaVentaController::class)->names('metas_ventas');
 
 Route::get('eventos', EventosIndex::class)->name('eventos.index');
+
+// Ruta para ventab rapida
+Route::get('venta_rapida', [VentaRapidaController::class, 'index'])->name('venta_rapida.index');
 
 
